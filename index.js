@@ -40,7 +40,7 @@ class Square extends Polygon {
         if (this.countSides !== 4) {
             return false;
         } else {
-            if ((this.sideLengths[0] === this.sideLengths[1]) && (this.sideLengths[1] === this.sideLengths[2]) && (this.sideLengths[2] === this.sideLengths[3]) && (this.sideLengths[3] === this.sideLengths[0])) {
+            if ((this.sideLengths[0] === this.sideLengths[1]) && (this.sideLengths[1] === this.sideLengths[2]) && (this.sideLengths[2] === this.sideLengths[this.sideLengths.length-1]) && (this.sideLengths[this.sideLengths.length-1] === this.sideLengths[0])) {
                 return true;
             } else {
                 return false;
